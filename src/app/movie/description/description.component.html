@@ -1,0 +1,20 @@
+<div class="card">
+  <img
+    src="http://image.tmdb.org/t/p/w185/{{ movie.poster_path }}"
+    (click)="handleId(id)"
+  />
+  <div class="details" *ngIf="movie">
+    <p><span>Title: </span>{{ movie.title }}</p>
+    <p><span>Decription:</span> {{ movie.overview }}</p>
+    <p><span>vote average:</span> {{ movie.vote_average }}</p>
+    <p><span>vote count:</span> {{ movie.vote_count }}</p>
+    <button class="watch" (click)="handleId(id)">watch trailer</button>
+  </div>
+  <div *ngIf="video" class="video">
+    <div style="position: relative">
+      <button class="close-btn" (click)="close()">X</button>
+    </div>
+    <iframe allow='autoplay' width="1000px" height="500" [src]="video | safe" frameborder="0">
+    </iframe>
+  </div>
+</div>

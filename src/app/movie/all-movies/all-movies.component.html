@@ -1,0 +1,16 @@
+<div id="scroll">
+<h1><span>Recently</span> Movies</h1>
+<div class="search">
+  <input type="search" [(ngModel)]="query" />
+  <button (click)="searchMovie()" >Search</button>
+</div>
+<div class="test">
+  <div class="movies" *ngFor="let movie of movies">
+    <a [routerLink]="['/Description', movie.id]"
+      ><img
+        src="http://image.tmdb.org/t/p/w185/{{ movie.poster_path }}"
+        (click)="handleId(movie.id)"
+    /></a>
+  </div>
+</div>
+</div>
