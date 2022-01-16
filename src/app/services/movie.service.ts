@@ -22,7 +22,6 @@ export class MovieService {
   }
   getOneMovie(id: string): Observable<any> {
     const url = `https://api.themoviedb.org/3/movie/${id}?api_key=bc63f0c08d018cf26d4cf02b8efde4d7&language=en-US`;
-    console.log(this.http.get<any>(url));
 
     return this.http.get<any>(url);
   }

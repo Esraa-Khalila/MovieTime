@@ -4,10 +4,10 @@
     (click)="handleId(id)"
   />
   <div class="details" *ngIf="movie">
-    <p><span>Title: </span>{{ movie.title }}</p>
-    <p><span>Decription:</span> {{ movie.overview }}</p>
-    <p><span>vote average:</span> {{ movie.vote_average }}</p>
-    <p><span>vote count:</span> {{ movie.vote_count }}</p>
+    <p><span>Title: </span>{{ movie?.title }}</p>
+    <p><span>Decription:</span> {{ movie?.overview }}</p>
+    <p><span>vote average:</span> {{ movie?.vote_average }}</p>
+    <p><span>vote count:</span> {{ movie?.vote_count }}</p>
     <button class="watch" (click)="handleId(id)">watch trailer</button>
   </div>
   <div *ngIf="video" class="video">

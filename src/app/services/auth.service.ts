@@ -9,14 +9,16 @@ import { Users } from '../types/login';
 export class AuthService {
   URL: string = 'https://api.realworld.io/api/users';
   APIUrl: string = 'https://api.realworld.io/api/users/login';
+  user;
   constructor(private http: HttpClient) {}
 
   addUser(user: User): Observable<any> {
     return this.http.post<User>(this.URL, { user: user });
   }
-  login(users: Users) {
+  login(users: Users):Observable<any> {
     return this.http.post<Users>(this.APIUrl, { user: users });
+    
   }
- 
+
   
 }

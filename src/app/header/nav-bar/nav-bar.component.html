@@ -9,26 +9,29 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent" [ngClass]="{'show':open}">
     <ul class="navbar-nav  mr-auto ">
-      <ng-container *ngIf="!user">
+      <div *ngIf="!user">
         <div class="home">
           <li class="nav-item active"><a href="/">Home</a></li>
           <li class="nav-item "><a href="#scroll">Recently Movies</a></li>
           <li class="nav-item "><a href="/">About</a></li>
           <li class="nav-item "><a href="/">Contact</a></li>
         </div>
-        <div class="logout" *ngIf="user">
+      </div>
+        <div class="logout" *ngIf="user" >
+          <li class="nav-item active"><a href="/">Home</a></li>
           <li class="nav-item ">Hello {{ currentUser }}</li>
-          <button (click)="logout()">logout</button>
+          <button (click)="logout()" routerLink="/login">logout</button>
         </div>
-      </ng-container>
-
-      <div class="auth">
+      
+      <div>
+        
+      <div class="auth" *ngIf="!user">
         \
-        <ng-container *ngIf="!user" class="navbar-nav ms-auto" >
+        <div  class="navbar-nav ms-auto " >
           <li class="nav-item "><a routerLink="/login">login</a></li>
           <li class="nav-item "><a routerLink="/register">register</a></li>
-        </ng-container>
-      </div>
+        </div>
+      </div></div>
     </ul>
   </div>
   </div>

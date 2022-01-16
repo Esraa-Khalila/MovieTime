@@ -1,29 +1,31 @@
 <div class="bg">
-<form (ngSubmit)="onSubmit()" [formGroup]="form">
-  <div class="sign">
-    <h3 class="title">Sign in</h3>
-    <a [routerLink]="['/']" class="auth-a">Need an account?</a>
-    <ul>
-      <li class="err" *ngFor="let err of backEndErrors">{{ err }}</li>
-    </ul>
+  <form (ngSubmit)="onSubmit()" [formGroup]="form" >
+    <div class="sign">
+      <h3 class="title">Sign in</h3>
+      <a [routerLink]="['/']" class="auth-a">Need an account?</a>
+      <ul>
+        <li class="err" *ngFor="let err of backEndErrors">{{ err }}</li>
+      </ul>
 
-    <div class="input-group">
-      <input
-        type="text"
-        class="input-group__input"
-        formControlName="email"
-        placeholder="email"
-      />
+      <div class="input-group">
+        <input
+          type="text"
+          class="input-group__input"
+          formControlName="email"
+          placeholder="email"
+        />
+      </div>
+      <div class="input-group">
+        <input
+          type="password"
+          class="input-group__input"
+          formControlName="password"
+          placeholder="password"
+        />
+      </div>
+      <button type="submit" class="button"   style="margin-top: 3.5rem">
+        Sign in
+      </button>
     </div>
-    <div class="input-group">
-      <input
-        type="password"
-        class="input-group__input"
-        formControlName="password"
-        placeholder="password"
-      />
-    </div>
-    <button type="submit" class="button" style="margin-top: 3.5rem;">Sign in</button>
-  </div>
-</form>
+  </form>
 </div>

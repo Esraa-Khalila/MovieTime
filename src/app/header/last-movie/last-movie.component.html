@@ -1,10 +1,10 @@
 <div class="card">
   <img [src]="movieImg | safe" (click)="handleId(movie.id)" />
   <div class="details">
-    <p><span>Title: </span>{{ movie.title }}</p>
-    <p><span>Decription:</span> {{ movie.overview }}</p>
-    <p><span>vote average:</span> {{ movie.vote_average }}</p>
-    <p><span>vote count:</span> {{ movie.vote_count }}</p>
+    <p><span>Title: </span>{{ movie?.title }}</p>
+    <p><span>Decription:</span> {{ movie?.overview }}</p>
+    <p><span>vote average:</span> {{ movie?.vote_average }}</p>
+    <p><span>vote count:</span> {{ movie?.vote_count }}</p>
     <button (click)="handleId(movie.id)" class="watch">watch trailer</button>
   </div>
   <div *ngIf="video" class="video">

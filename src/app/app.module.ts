@@ -13,7 +13,7 @@ import { SafePipe } from './pipes/safe.pipe';
 import { AllMoviesComponent } from './movie/all-movies/all-movies.component';
 import { HomeComponent } from './Home/home/home.component';
 import { DescriptionComponent } from './movie/description/description.component';
-import { FooterComponent } from './home/footer/footer.component';
+import { FooterComponent } from './Home/footer/footer.component';
 
 
 @NgModule({
