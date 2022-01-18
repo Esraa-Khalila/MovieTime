@@ -20,12 +20,12 @@
     padding: 10rem;
 
   }
-  .input-group {
+  .input-auth{
     margin: 1rem;
     font-size: 1rem;
   }
   
-  .input-group__input {
+  .input-auth__input {
     width: 45rem;
     height: 5rem;
     border-radius: 0.5rem;
@@ -67,6 +67,9 @@
   }
   .bg{
     background-color: white;
+}
+::placeholder{
+  font-size: large;
 }
   
 @media screen and (max-width: 700px){

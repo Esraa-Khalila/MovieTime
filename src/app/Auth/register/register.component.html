@@ -1,36 +1,36 @@
 <div class="bg">
-<form (ngSubmit)="onSubmit()" [formGroup]="form">
-  <div class="sign">
-    <h3 class=title>Sign Up</h3>
-    <a [routerLink]="['/login']" class="auth-a">Have a account?</a>
-    <ul>
-      <li class="err" *ngFor="let err of backEndErrors">{{ err }}</li>
-    </ul>
-    <div class="input-group">
-      <input
-        type="text"
-        class="input-group__input"
-        formControlName="username"
-        placeholder="username"
-      />
+  <form (ngSubmit)="onSubmit()" [formGroup]="form">
+    <div class="sign">
+      <h3 class="title">Sign Up</h3>
+      <a [routerLink]="['/login']" class="auth-a">Have a account?</a>
+      <ul>
+        <li class="err" *ngFor="let err of backEndErrors">{{ err }}</li>
+      </ul>
+      <div class="input-auth">
+        <input
+          type="text"
+          class="input-auth__input"
+          formControlName="username"
+          placeholder="username"
+        />
+      </div>
+      <div class="input-auth">
+        <input
+          type="text"
+          class="input-auth__input"
+          formControlName="email"
+          placeholder="email"
+        />
+      </div>
+      <div class="input-auth">
+        <input
+          type="password"
+          class="input-auth__input"
+          formControlName="password"
+          placeholder="password"
+        />
+      </div>
+      <button type="submit" class="button">Sign Up</button>
     </div>
-    <div class="input-group">
-      <input
-        type="text"
-        class="input-group__input"
-        formControlName="email"
-        placeholder="email"
-      />
-    </div>
-    <div class="input-group">
-      <input
-        type="password"
-        class="input-group__input"
-        formControlName="password"
-        placeholder="password"
-      />
-    </div>
-    <button type="submit" class="button">Sign Up</button>
-  </div>
-</form>
+  </form>
 </div>

@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class NavBarComponent implements OnInit {
   currentUser;
   user;
+
   open: boolean = false;
 
   constructor() {}
@@ -26,6 +27,6 @@ export class NavBarComponent implements OnInit {
   }
 
   navOpen() {
-    this.open = !this.open;
+    this.open=!this.open
   }
 }
