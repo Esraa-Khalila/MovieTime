@@ -1,14 +1,13 @@
- .navbar {
+.navbar {
   background-color: rgb(14, 56, 56);
   height: 55px;
- 
 }
 
 .logo {
   font-size: 2.5rem;
   margin: 10px;
 }
-.menu{
+.menu {
   display: flex;
   justify-content: space-around;
 }
@@ -20,7 +19,6 @@ ul li {
 }
 .navbar-toggler {
   background-color: black;
-  
 }
 span {
   color: #41cece;
@@ -29,13 +27,11 @@ span {
   display: flex;
   font-size: 1.7rem;
   margin-left: 30rem;
-  
 }
 .auth {
   display: flex;
   font-size: 1.6rem;
-  margin-left: 30rem; 
-  
+  margin-left: 35rem;
 }
 a {
   text-decoration: none;
@@ -59,36 +55,35 @@ button {
   color: white;
 }
 
-
 @media screen and (max-width: 500px) {
   .navbar-nav {
     background-color: black;
     display: block;
     margin: 2px;
-    
-  } 
+    width: 450px;
+  }
   .navbar-toggler {
     width: 45px;
     height: 28px;
     border-radius: 3px;
-    width: 450px;
-  } 
+  }
   .auth {
     display: flex;
     flex-direction: column;
-    
-    
+
+    margin: auto;
   }
 
   .home {
     display: flex;
     flex-direction: column;
+    margin: auto;
   }
   .logout {
     display: flex;
     flex-direction: column;
   }
-a:hover{
-  color: #41cece;
-}
+  a:hover {
+    color: #41cece;
+  }
 }
