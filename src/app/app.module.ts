@@ -16,6 +16,8 @@ import { DescriptionComponent } from './movie/description/description.component'
 import { FooterComponent } from './Home/footer/footer.component';
 
 
+
+
 @NgModule({
   declarations: [AppComponent, LoginComponent, RegisterComponent, NavBarComponent, LastMovieComponent, SafePipe, AllMoviesComponent, HomeComponent, DescriptionComponent, FooterComponent],
   imports: [

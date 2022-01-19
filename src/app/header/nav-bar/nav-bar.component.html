@@ -1,38 +1,53 @@
-<nav class="navbar navbar-expand-lg ">
-  <div class="container-fluid">
-  <div class="logo">
-    <a href="/"><span>Movie</span>Time</a>
-  </div>
-  <button  class="navbar-toggler " (click)="navOpen()" type="button" data-toggle="collapse"
-    data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <i class="fa fa-bars"></i>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent" [ngClass]="{'show':open}">
-    <ul class="navbar-nav  mr-auto ">
-      <div *ngIf="!user">
-        <div class="home">
-          <li class="nav-item active"><a href="/">Home</a></li>
-          <li class="nav-item "><a href="#scroll">Recently Movies</a></li>
-          <li class="nav-item "><a href="/">About</a></li>
-          <li class="nav-item "><a href="/">Contact</a></li>
+<div class=" navbar navbar-expand-lg ">
+  <div class="container-fluid ">
+    <div class="logo navbar-brand">
+      <a href="/"><span>Movie</span>Time</a>
+    </div>
+
+    <button
+      class="navbar-toggler"
+      (click)="navOpen()"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="fa fa-bars"></i>
+    </button>
+    
+    <div
+      class="collapse navbar-collapse " 
+      id="navbarNav"
+      [ngClass]="{ show: open }"
+    >
+    
+      <ul class="navbar-nav ">
+        <div *ngIf="!user">
+          <div class="home">
+            <li class="nav-item active"><a href="/">Home</a></li>
+            <li class="nav-item"><a href="#scroll">Movies</a></li>
+            <li class="nav-item"><a href="/">About</a></li>
+            <li class="nav-item"><a href="/">Contact</a></li>
+          </div>
         </div>
-      </div>
-        <div class="logout" *ngIf="user" >
+        <div class="logout" *ngIf="user">
           <li class="nav-item active"><a href="/">Home</a></li>
-          <li class="nav-item ">Hello {{ currentUser }}</li>
+          <li class="nav-item">Hello {{ currentUser }}</li>
           <button (click)="logout()" routerLink="/login">logout</button>
         </div>
-      
-      <div>
-        
-      <div class="auth" *ngIf="!user">
-        \
-        <div  class="navbar-nav mr-auto  " >
-          <li class="nav-item "><a routerLink="/login">login</a></li>
-          <li class="nav-item "><a routerLink="/register">register</a></li>
+
+        <div>
+          <div class="auth" *ngIf="!user">
+            \
+            <div class="navbar-nav">
+              <li class="nav-item"><a routerLink="/login">login</a></li>
+              <li class="nav-item"><a routerLink="/register">register</a></li>
+            </div>
+          </div>
         </div>
-      </div></div>
-    </ul>
+      </ul>
+    </div>
   </div>
-  </div>
-</nav>
+</div>
