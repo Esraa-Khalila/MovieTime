@@ -76,7 +76,16 @@
  .button{
    width: 150px;
  }
- .input-group__input{
+ .input-auth__input{
   width: 280px;
  }
 }
+@media screen and (max-width: 450px){
+  .button{
+    width: 100px;
+  }
+  .input-auth__input{
+   width: 300px;
+  }
+  
+ }
