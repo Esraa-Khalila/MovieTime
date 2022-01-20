@@ -21,15 +21,15 @@ span {
 
 ul {
   display: grid;
-  grid-template-columns: repeat(4,200px);
-  margin-left: 170px;
+  grid-template-columns: repeat(4,100px);
+  
 }
 ul li {
   list-style-type: none;
   margin-top: 10px;
   color: white;
   font-size: 2rem;
-  width: 300px;
+
   padding: .5rem;
   
 }
@@ -64,16 +64,15 @@ h5{
 
 
   ul li{
-   margin-left: -400px;
+   
    font-size: 1rem;
 
 
   }
   ul{
     display: grid;
-    grid-template-columns: repeat(2,200px);
-    padding-left: 250px;
-    
+    grid-template-columns: repeat(2,155px);
+    margin-left: 30px;
   }
   h3 {
     margin-right: 50px;
@@ -81,9 +80,7 @@ h5{
   }
 }
 @media screen and (max-width:1050px) {
-  ul li{
-    padding-right: 120px;
-  }
+
 }
 @media screen and (max-width:900px) {
   ul li{

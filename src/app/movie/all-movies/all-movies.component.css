@@ -93,10 +93,10 @@ button {
   .test {
     display: grid;
     grid-template-columns: repeat(1, 10px);
-    margin-left: 55px;
+    margin-left: 40px;
   }
   h1 {
-    margin-left: -50px;
+    margin-right: -1px;
   }
 
   img {
@@ -104,9 +104,17 @@ button {
     margin-bottom: -80px;
   }
   .search {
-    margin-left: 80px;
+    margin:50px
   }
   hr {
-    color: white;
+    color: rgb(247, 245, 245);
+    
+  }
+  button{
+    width: 60px;
+  }
+  input{
+    width: 150px;
   }
 }
+  
