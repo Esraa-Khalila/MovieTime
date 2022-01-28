@@ -29,7 +29,7 @@ img {
   display: flex;
   justify-content: flex-end;
   padding: 20px;
-  margin-right: 10rem;
+  margin-right: 12rem;
   height: 7rem;
 }
 input {
@@ -93,7 +93,8 @@ button {
   .test {
     display: grid;
     grid-template-columns: repeat(1, 10px);
-    margin-left: 40px;
+    margin-left: 55px;
+    
   }
   h1 {
     margin-right: -1px;
@@ -101,10 +102,10 @@ button {
 
   img {
     width: 200px;
-    margin-bottom: -80px;
+    
   }
   .search {
-    margin:50px
+    margin-right:50px
   }
   hr {
     color: rgb(247, 245, 245);
@@ -117,4 +118,4 @@ button {
     width: 150px;
   }
 }
-  
+

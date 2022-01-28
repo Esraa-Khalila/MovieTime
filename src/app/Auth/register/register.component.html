@@ -1,10 +1,10 @@
-<div class="bg">
+<div class="background">
   <form (ngSubmit)="onSubmit()" [formGroup]="form">
     <div class="sign">
       <h3 class="title">Sign Up</h3>
-      <a [routerLink]="['/login']" class="auth-a">Have a account?</a>
+      <a [routerLink]="['/login']" class="link-NewAccount">Have a account?</a>
       <ul>
-        <li class="err" *ngFor="let err of backEndErrors">{{ err }}</li>
+        <li class="erorr" *ngFor="let err of backEndErrors">{{ err }}</li>
       </ul>
       <div class="input-auth">
         <input

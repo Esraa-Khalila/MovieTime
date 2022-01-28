@@ -41,13 +41,13 @@
     font-weight: 600;
     color: #086464;
   }
-   .auth-a{
+   .link-NewAccount{
     color: #097575;
     font-size: 1.6rem;
     margin-bottom: 2rem;
     text-decoration: none;
   }
-  .err {
+  .erorr{
     color: #b85c5c !important;
     font-weight: 700;
     font-size: 2rem;
@@ -65,7 +65,7 @@
     margin-left: 2rem;
     margin-top: .4rem;
   }
-  .bg{
+  .background{
     background-color: white;
 }
 ::placeholder{

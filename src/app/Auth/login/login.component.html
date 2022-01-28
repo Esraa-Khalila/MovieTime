@@ -1,10 +1,10 @@
-<div class="bg">
-  <form (ngSubmit)="onSubmit()" [formGroup]="form" >
+<div class="background">
+  <form (ngSubmit)="onSubmit()" [formGroup]="form">
     <div class="sign">
       <h3 class="title">Sign in</h3>
-      <a [routerLink]="['/']" class="auth-a">Need an account?</a>
+      <a [routerLink]="['/']" class="link-NewAccount">Need an account?</a>
       <ul>
-        <li class="err" *ngFor="let err of backEndErrors">{{ err }}</li>
+        <li class="erorr" *ngFor="let err of backEndErrors">{{ err }}</li>
       </ul>
 
       <div class="input-auth">
@@ -23,7 +23,7 @@
           placeholder="password"
         />
       </div>
-      <button type="submit" class="button"   style="margin-top: 3.5rem">
+      <button type="submit" class="button" style="margin-top: 3.5rem">
         Sign in
       </button>
     </div>
